@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto Flex', sans-serif;
+}
+h2{
+  font-size: 2rem;
+}
+/* header */
+header {
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+  background-color: whitesmoke;
+}
+
+#name {
+  margin-left: 2rem;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-item {
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* main */
+main {
+  top: 5rem;
+  position: relative;
+
+}
+
+/* resumen */
+#resumen {
+  background-image: linear-gradient(white, white), url('./images/fii.jpg');
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+
+}
+
+.resumen-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.resumen-text {
+  background-color: white;
+  opacity: .85;
+  padding: .5rem 1rem .5rem 1rem;
+  max-width: 40%;
+  text-align: center;
+}
+
+.resumen-text p {
+  text-align: justify;
+  line-height: 35px;
+}
+
+.resumen-portrait {
+  width: 15%;
+  filter: grayscale(.6);
+  border-radius: 50%;
+  align-self: center;
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+/* Experiencia laboral */
+#experiencia {
+  display: block;
+  line-height: 30px;
+  padding-bottom: 3rem;
+}
+
+#experiencia h2 {
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.experiencias-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.exp-container {
+  flex: 1;
+  max-width: 35%;
+  padding: 1.5rem;
+  background-color: whitesmoke;
+  opacity: .9;
+
+
+}
+
+.exp-container h3, .exp-fecha {
+  text-align: center;
+}
+
+.exp-descripcion {
+  text-align: justify;
+}
+
+/* estudios */
+#estudios {
+  background-color: whitesmoke;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+#estudios h2 {
+  text-align: center;
+}
+
+.estudios-universitarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.estudios-universitarios img {
+  width: 10%;
+  margin-right: 10rem;
+}
+
+.formacion-adicional {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  line-height: 30px;
+}
+.formacion-adicional summary{
+  font-weight: bolder;
+  
+}
+/* competencias */
+#competencias{
+  line-height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* contacto */
+#contacto{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+}
+#contacto-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    font-size: 2.5em;
+  }
