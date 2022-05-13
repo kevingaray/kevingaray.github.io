@@ -9,9 +9,11 @@ body {
   margin: 0 auto;
   font-family: 'Roboto Flex', sans-serif;
 }
-h2{
+
+h2 {
   font-size: 2rem;
 }
+
 /* header */
 header {
   position: fixed;
@@ -113,8 +115,6 @@ main {
   padding: 1.5rem;
   background-color: whitesmoke;
   opacity: .9;
-
-
 }
 
 .exp-container h3, .exp-fecha {
@@ -155,12 +155,14 @@ main {
   margin-top: 2rem;
   line-height: 30px;
 }
-.formacion-adicional summary{
+
+.formacion-adicional summary {
   font-weight: bolder;
-  
+
 }
+
 /* competencias */
-#competencias{
+#competencias {
   line-height: 30px;
   display: flex;
   justify-content: space-around;
@@ -170,20 +172,81 @@ main {
 }
 
 /* contacto */
-#contacto{
+#contacto {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contacto-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  font-size: 2.5em;
+}
+
+@media only screen and (max-width: 480px) {
+ .nav-items{
+  display: none;
+ }
+
+ h2 {
+   font-size: 1.5rem;
+ }
+ /* resumen */
+ #name{
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .resumen-text p {
+  line-height: 25px;
+}
+
+.resumen-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.resumen-text{
+  margin-top: 1rem;
+  max-width: 60%;
+}
+.resumen-portrait {
+  width: 30%;
+}
+/* Experiencia */
+.experiencias-container {
+  display: block;
+}
+.exp-container {
+  max-width: 100%;
+}
+/* estudios */
+#estudios {
+  padding-top: 1.5rem;
+}
+.carrera::after{
+  content: " en UNMSM";
+}
+.carrera{
+  padding-top: 1rem;
+}
+.estudios-universitarios img {
+  display: none;
+} 
+/* competencias */
+#competencias {
+  flex-direction: column;
+  text-align: center;
+}
 
 }
-#contacto-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 1rem;
-    font-size: 2.5em;
-  }
