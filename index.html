@@ -12,12 +12,13 @@
 
 <body>
     <header>
-        <h2 id="name">KEVIN GARAY MEDRANO</h2>
+        <h2 id="name">KEVIN GARAY</h2>
         <ul class="nav-items">
             <li class="nav-item resumen-link"><a href="#resumen">Resumen</a></li>
             <li class="nav-item experiencia-link"><a href="#experiencia">Experiencia</a></li>
             <li class="nav-item"><a href="#estudios">Estudios</a></li>
             <li class="nav-item"><a href="#competencias">Competencias</a></li>
+            <li class="nav-item"><a href="#proyectos">Proyectos</a></li>
             <li class="nav-item"><a href="#contacto">Contacto</a></li>
         </ul>
     </header>
@@ -29,8 +30,8 @@
                     <h2>Resumen</h2>
                     <p>Bachiller en ingeniería industrial de la UNMSM
                         egresado como miembro del décimo superior académico,
-                        con experiencia en el sector privado (mercado inmobiliario)
-                        y público (SUNAT).</p>
+                        con experiencia en el mercado inmobiliario( area comercial) ,
+                        tecnologia (trainee en Ruby on Rails) y sector público (SUNAT).</p>
                 </div>
                 <img src="./images/profilepic.jpg" alt="Kevin Garay" class="resumen-portrait">
             </div>
@@ -38,6 +39,22 @@
         <section id="experiencia">
             <h2>Experiencia Laboral</h2>
             <div class="experiencias-container">
+                <div class="exp-container">
+                    <h3>ApplaudoStudios</h3>
+                    <p class="exp-fecha">Julio 2022 - Diciembre 2022</p>
+                    <p class="exp-descripcion">Cargo: Trainee en Ruby on Rails</p>
+                    <p>Experiencia</p>
+                    <ul>
+                        <li>Gitflow</li>
+                        <li>OOP</li>
+                        <li>SQL(postgres)</li>
+                        <li>Testing(minitest - rspec)</li>
+                        <li>REST APIs</li>
+                        <li>Third party services</li>
+                        <li>Jobs - Mailers</li>
+                        <li>Documentation(swagger)</li>
+                    </ul>
+                </div>
                 <div class="exp-container">
                     <h3>SUNAT</h3>
                     <p class="exp-fecha">Marzo 2021 - Diciembre 2021</p>
@@ -74,6 +91,7 @@
                 <details>
                     <summary>Formación Adicional</summary>
                     <ul>
+                        <li>Ruby on Rails framework</li>
                         <li>Actualización tributaria</li>
                         <li>Sistemas de Gestión ISO 91001 21001</li>
                         <li>Front end (HTML-CSS-JavaScript)</li>
@@ -87,12 +105,43 @@
             <ul>
                 <li>Ingles C2</li>
                 <li>Office Avanzado (Excel, Word, PowerPoint)</li>
+                <li>Ruby on Rails (Frontside, API)</li>
                 <li>Diseño asistido por computadora avanzado (Inventor, Solidworks)</li>
                 <li>SQL intermedio</li>
                 <li>HTML-CSS-JavaScript</li>
                 <li>JAVA intermedio</li>
                 <li>Paquetes estadisticos (SPSS, python, Minitab)</li>
             </ul>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos-container">
+                <div class="proyecto">
+                    <h3>SnackStore</h3> 
+                    <a href="https://snackstorekevg.herokuapp.com/" target="_blank">Heroku deploy</a>
+                    <p>Some functions:</p>
+                    <ul>
+                        <li>Devise (user and send email for recover account)</li>
+                        <li>Integration with stripe (payment)</li>
+                        <li>Users type : admi, manager and customer</li>
+                        <li>Bootstrap for css </li>
+                        <li>API side (login with fb and doorkeeper)</li>
+                    </ul>
+                </div>
+                <div class="proyecto">
+                    <h3>Restaurant reservation API</h3> 
+                    <a href="https://reservationkevg.herokuapp.com/api-docs/index.html" target="_blank">Swagger documentation</a>
+                    <p>Some functions: (use insomnia)</p>
+                    <ul>
+                        <li>Login with accesstoken (fb and gmail)</li>
+                        <li>Users type : admi, manager and customer</li>
+                        <li>Mail to customer with reservation code </li>
+                        <li>Dayli report to managers with top hours reservation in the restaurant</li>
+                        <li>Test with rspec and documentation with rswag</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
