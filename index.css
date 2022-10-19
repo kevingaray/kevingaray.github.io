@@ -180,15 +180,16 @@ main {
 }
 
 .proyectos-container{
-  display: flex;
+  display: flex;  
+  flex-wrap: wrap;
   padding-top: 1rem;
-  
 }
 
 .proyecto{
   width: 40%;
   margin: auto;
   line-height: 35px;
+  padding-bottom:  1.5rem;
 }
 
 /* contacto */
