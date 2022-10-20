@@ -1,2 +1,9 @@
 # kevingaray.github.io
-CV project 
+CV english version web
+
+* Summary
+* Work experience
+* Education
+* Skills
+* Proyects
+* Contact
