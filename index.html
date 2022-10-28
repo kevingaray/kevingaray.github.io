@@ -1,108 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kevin Garay Medrano</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h2 id="name">KEVIN GARAY</h2>
-        <ul class="nav-items">
-            <li class="nav-item resumen-link"><a href="#resumen">Summary</a></li>
-            <li class="nav-item experiencia-link"><a href="#experiencia">Work Experience</a></li>
-            <li class="nav-item"><a href="#estudios">Education</a></li>
-            <li class="nav-item"><a href="#competencias">Skills</a></li>
-            <li class="nav-item"><a href="#proyectos">Projects</a></li>
-            <li class="nav-item"><a href="#contacto">Contact</a></li>
-        </ul>
+      <div class="navbar-fixed">
+        <nav class="blue-grey">
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Kevin Garay</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#summary">Summary</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section id="resumen">
-            <div class="resumen-container">
-                <div class="resumen-text">
-                    <h2>Summary</h2>
-                    <p>Bachelor’s degree in Industrial engineering from
-                        UNMSM, graduated as member of the top tenth students, 
-                        with experience in backend development, real estate market and 
-                        tax collection (SUNAT).</p>  
-                </div>
-                <img src="./images/profilepic.jpg" alt="Kevin Garay" class="resumen-portrait">
+
+      <section id="summary">
+        <div class="col s12 grey lighten-5" style="padding: 3rem">
+          <div class="row valign-wrapper">
+            <div class="col m3">
+              <img src="images/profilepic.jpg" alt="" class="circle responsive-img"> 
             </div>
-        </section>
-        <section id="experiencia">
-            <h2>Work Experience</h2>
-            <div class="experiencias-container">
-                <div class="exp-container">
-                    <h3>ApplaudoStudios</h3>
-                    <p class="exp-fecha">July 2022 - October 2022</p>
-                    <p class="exp-descripcion">Position: Trainee Ruby on Rails</p>
-                    <p>Topics</p>
-                    <ul>
-                        <li>Gitflow</li>
-                        <li>OOP</li>
-                        <li>SQL(postgres)</li>
-                        <li>Testing(minitest - rspec)</li>
-                        <li>REST APIs</li>
-                        <li>Third party services</li>
-                        <li>Jobs - Mailers</li>
-                        <li>Documentation(swagger)</li>
-                    </ul>
-                </div>
-                <div class="exp-container">
-                    <h3>SUNAT</h3>
-                    <p class="exp-fecha">March 2021 - December 2021</p>
-                    <p class="exp-descripcion">Position: Professional practices at 
-                        Technical Office of Social Security Resources</p>
-                    <p>Functions</p>
-                    <ul>
-                        <li>Development of press releases</li>
-                        <li>Development of quarterly collection reports</li>
-                        <li>Database management</li>
-                    </ul>
-                </div>
-                <div class="exp-container">
-                    <h3>ABRIL Grupo Inmobiliario</h3>
-                    <p class="exp-fecha">December 2019 - January 2021</p>
-                    <p class="exp-descripcion">Position: Commercial Assistant</p>
-                    <p>Functions</p>
-                    <ul>
-                        <li>Real estate websites management</li>
-                        <li>Market studies</li>
-                        <li>Support in real estate fairs</li>
-                        <li>Sales team coordination</li>
-                    </ul>
-                </div>
+            <div class="col m9">
+              <h3 class="center-align" ><i class="small material-icons">attach_file</i>  Summary</h3>
+              <span class="black-text">
+                    Bachelor's degree in Industrial engineering from
+                    UNMSM, graduated as member of the top tenth students, 
+                    with experience in backend development, real estate market and 
+                    tax collection (SUNAT).
+              </span>
             </div>
-        </section>
-        <section id="estudios">
-            <h2>Education</h2>
-            <div class="estudios-universitarios">
-                <img src="./images/unmsm-logo.png" alt="unmsm-logo">
-                <h3 class="carrera">Industrial engineering</h3>
-            </div>
-            <div class="formacion-adicional">
-                <details>
-                    <summary>Additional training</summary>
-                    <ul>
-                        <li>Ruby on Rails backend</li>
-                        <li>Front end (HTML-CSS-JavaScript)</li>
-                        <li>3D CAD design and printing</li>
-                        <li>Tax topics</li>
-                        <li>Management Systems ISO 9001, ISO 21001</li>
-                    </ul>
-                </details>
-            </div>
-        </section>
-        <section id="competencias">
-            <h2>Skill</h2>
+          </div>     
+        </div>
+      </section> 
+
+      <div class="divider"></div>
+
+
+      <section id="experience">
+        <div class="row">
+          <h3 class="center-align"><i class="small material-icons">build</i>  Experience</h3>
+        </div>
+        
+        <div class="row center-align">
+          <div class="col s12 m4">
+            <h4>ApplaudoStudios</h4>
+            <p>(Web development)</p>
+            <p>July 2022 - October 2022</p>
+            <p>Position: Trainee Ruby on Rails</p>
+            <p><strong>Topics</strong></p>
             <ul>
+                <li>Gitflow</li>
+                <li>OOP</li>
+                <li>SQL(postgres)</li>
+                <li>Testing(minitest - rspec)</li>
+                <li>REST APIs</li>
+                <li>Third party services</li>
+                <li>Jobs - Mailers</li>
+                <li>Documentation(swagger)</li>
+            </ul>
+          </div>
+          <div class="col s12 m4 grey lighten-5">
+            <h4>SUNAT</h4>
+            <p>(Tax collection)</p>
+            <p>March 2021 - December 2021</p>
+            <p>Position: Professional practices at 
+              Technical Office of Social Security Resources</p>
+            <p><strong>Functions</strong></p>
+            <ul>
+                <li>Development of press releases</li>
+                <li>Development of quarterly collection reports</li>
+                <li>Database management</li>
+            </ul>
+          </div>
+          <div class="col s12 m4">
+            <div class="exp-container">
+              <h4>ABRIL</h4>
+              <p>(Real estate development)</p>
+              <p>December 2019 - January 2021</p>
+              <p>Position: Commercial Assistant</p>
+              <p><strong>Functions</strong></p>
+              <ul>
+                  <li>Real estate websites management</li>
+                  <li>Market studies</li>
+                  <li>Support in real estate fairs</li>
+                  <li>Sales team coordination</li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="education">
+        <div class="row">
+          <h3 class="center-align"><i class="small material-icons">school</i>  Education</h3>
+        </div>
+        
+        <div class="row">
+          <div class="col s12 m9 center-align">
+            <h4>Industrial engineering</h4>
+            <p>Lima-Peru</p>
+          </div>
+
+          <div class="col m2 hide-on-small-only">
+            <img src="images/unmsm-logo.png" class="responsive-img">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="center-align">
+              <strong>Addtional training</strong>
+              <ul>
+                  <li>Ruby on Rails backend</li>
+                  <li>Front end (HTML-CSS-JavaScript)</li>
+                  <li>3D CAD design and printing</li>
+                  <li>Tax topics</li>
+                  <li>Management Systems ISO 9001, ISO 21001</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="skills">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m6">
+                <h3 class="center-align"><i class="small material-icons">settings</i>  Skills</h3>
+            </div>
+            <div class="col s12 m6">
+              <ul class="left-align browser-default">
                 <li>Advance English</li>
                 <li>Native Spanish</li>
                 <li>Office (Excel, Word, PowerPoint)</li>
@@ -112,83 +158,123 @@
                 <li>Statistics (SPSS, python, Minitab)</li>
                 <li>HTML-CSS-JavaScript</li>
                 <li>Basic Java Python C++</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="projects">
+        <div class="row">
+          <h3 class="center-align"><i class="small material-icons">collections_bookmark</i>  Projects</h3>
+        </div>
+
+        <div class="row container">
+          <div class="col s12 m6">
+            <h4>SnackStore</h4>
+            <a href="https://snackstorekevg.herokuapp.com/" target="_blank">Heroku deploy</a>
+            <p>Some functions:</p>
+            <ul class="browser-default">
+                <li>Devise (user and send email for recover account)</li>
+                <li>Integration with stripe (payment)</li>
+                <li>Users type : admi, manager and customer</li>
+                <li>Bootstrap for css </li>
+                <li>API side (login with fb and doorkeeper)</li>
             </ul>
-        </section>
-        <section id="proyectos">
-            <h2>Projects</h2>
-            <div class="proyectos-container">
-                <div class="proyecto">
-                    <h3>SnackStore</h3> 
-                    <a href="https://snackstorekevg.herokuapp.com/" target="_blank">Heroku deploy</a>
-                    <p>Some functions:</p>
-                    <ul>
-                        <li>Devise (user and send email for recover account)</li>
-                        <li>Integration with stripe (payment)</li>
-                        <li>Users type : admi, manager and customer</li>
-                        <li>Bootstrap for css </li>
-                        <li>API side (login with fb and doorkeeper)</li>
-                    </ul>
-                </div>
-                <div class="proyecto">
-                    <h3>Restaurant reservation API</h3> 
-                    <a href="https://reservationkevg.herokuapp.com/api-docs/index.html" target="_blank">Swagger documentation</a>
-                    <p>Some functions: (use insomnia)</p>
-                    <ul>
-                        <li>Login with accesstoken (fb and gmail)</li>
-                        <li>Users type : admi, manager and customer</li>
-                        <li>Mail to customer with reservation code </li>
-                        <li>Dayli report to managers with top hours reservation in the restaurant</li>
-                        <li>Test with rspec and documentation with rswag</li>
-                    </ul>
-                </div>
-                <div class="proyecto">
-                    <h3>Blogs app</h3> 
-                    <a href="https://blogkevg.herokuapp.com" target="_blank">Heroku deploy</a>
-                    <p>Some functions:</p>
-                    <ul>
-                        <li>Signup and create blogs</li>
-                        <li>Asign blogs to multiple category</li>
-                        <li>Bootstrap 4.4 for css</li>
-                        <li>Admi functions </li>
-                        <li>Integration minitest</li>
-                    </ul>
-                </div>
-                <div class="proyecto">
-                    <h3>Chatmessage</h3> 
-                    <a href="https://messagekevg.herokuapp.com/" target="_blank">Heroku deploy</a>
-                    <p>Some functions:</p>
-                    <ul>
-                        <li>Action cable implementation (production and deploy)</li>
-                        <li>Chat channel</li>
-                        <li>Semantic UI for css</li>
-                    </ul>
-                </div>
+          </div>
 
-                <div class="proyecto">
-                    <h3>Finance Tracker Stocks</h3> 
-                    <a href="https://kevgfinance.herokuapp.com/" target="_blank">Heroku deploy</a>
-                    <p>Some functions:</p>
-                    <ul>
-                        <li>Keep track of Stocks</li>
-                        <li>Follow other users</li>
-                        <li>Use of IEX cloud to get the stocks prices</li>
-                        <li>JavaScript render to show info of stocs and users when use the search function</li>
-                    </ul>
-                </div>
+          <div class="col s12 m6">
+            <h4>API Restaurant reservation</h4>
+            <a href="https://reservationkevg.herokuapp.com/api-docs/index.html" target="_blank">Swagger documentation</a>
+            <p>Some functions: (use insomnia)</p>
+            <ul class="browser-default">
+                <li>Login with accesstoken (fb and gmail)</li>
+                <li>Users type : admi, manager and customer</li>
+                <li>Mail to customer with reservation code </li>
+                <li>Dayli report to managers with top hours reservation in the restaurant</li>
+                <li>Test with rspec and documentation with rswag</li>
+            </ul>
+          </div>
 
-            </div>
+          <div class="col s12 m6">
+            <h4>Blogs app</h4>
+            <a href="https://blogkevg.herokuapp.com" target="_blank">Heroku deploy</a>
+            <p>Some functions:</p>
+            <ul class="browser-default">
+              <li>Signup and create blogs</li>
+              <li>Asign blogs tocontact multiple category</li>
+              <li>Bootstrap 4.4 for css</li>
+              <li>Admi functions </li>
+              <li>Integration minitest</li>
+            </ul>
+          </div>
 
-        </section>
-        <section id="contacto">
-            <h2>Contact</h2>
-            <div id="contacto-container">
-                <a href="https://www.linkedin.com/in/kevin-gerardo-garay-medrano/" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-                <a href="https://github.com/kevingaray" target="_blank"><i class="fab fa-github icon" ></i></a>
-                <a href="mailto: kevingaraymedrano@gmail.com" target="_blank"><i class="fas fa-envelope-square icon"></i></a>
-                <a href="https://telegram.me/kevger23" target="_blank"><i class="fab fa-telegram"></i></a>
-            </div>
-        </section>
+          <div class="col s12 m6">
+            <h4>Chatmessage</h4>
+            <a href="https://messagekevg.herokuapp.com/" target="_blank">Heroku deploy</a>
+            <p>Some functions:</p>
+            <ul class="browser-default">
+              <li>Action cable implementation (production and deploy)</li>
+              <li>Chat channel</li>
+              <li>Semantic UI for css</li>
+            </ul>
+          </div>
+
+          <div class="col s12 m6">
+            <h4>Finance Tracker Stocks</h4>
+            <a href="https://kevgfinance.herokuapp.com/" target="_blank">Heroku deploy</a>
+            <p>Some functions:</p>
+            <ul class="browser-default">
+              <li>Keep track of Stocks</li>
+              <li>Follow other users</li>
+              <li>Use of IEX cloud to get the stocks prices</li>
+              <li>JavaScript render to show info of stocs and users when use the search function</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="contact" >
+        <div class="row">
+          <h3 class="center-align"><i class="small material-icons">border_color</i>  Contact</h3>
+        </div>
+
+        
+        <div class="row container center-align">
+          <div class="col s3">
+            <a href="https://www.linkedin.com/in/kevin-gerardo-garay-medrano/" target="_blank"><i class="fab fa-linkedin icon medium"></i></a>
+          </div>
+
+          <div class="col s3">
+            <a href="https://github.com/kevingaray" target="_blank"><i class="fab fa-github icon medium" ></i></a>
+          </div>
+
+          <div class="col s3">
+            <a href="mailto: kevingaraymedrano@gmail.com" target="_blank"><i class="fas fa-envelope-square icon medium"></i></a>
+          </div>
+
+          <div class="col s3">
+            <a href="https://telegram.me/kevger23" target="_blank"><i class="fab fa-telegram medium"></i></a>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
     </main>
-</body>
 
+
+
+
+
+    <script type="text/javascript" src="js/materialize.js"></script>
+  </body>
 </html>
+      
